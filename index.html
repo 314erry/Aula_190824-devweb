@@ -1,22 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula</title>
+    <title>Pierry Jonny - Portfólio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
-    <h1 style="text-align: center;">HTML da aula</h1>
+    <div class="container">
 
-    <h2 style="text-align: center;">Como fazer um omelete:</h2>
+        <section class="header">
+            <div class="intro">
+                <h1>Pierry Jonny</h1>
+                <h2>Estudante de Programação</h2>
+                <p>Sou um desenvolvedor curioso, aspirando em ser um programador Front-End no futuro.</p>
+            </div>
+            <div class="photo">
+                <img src="foto.svg" alt="Pierry Jonny">
+            </div>
+        </section>
 
-    <ul style="text-align: center;">
-        Pego 3 ovos
-        Quebro eles na vasilha
-        Faço o omelete
-    </ul>
 
-    <img src="https://th.bing.com/th/id/OIP.pSGsMWhprQFtvbQJCouU0wHaE8?rs=1&pid=ImgDetMain" alt="Omelete">
+        <section class="about-me">
+            <h2>Sobre Mim</h2>
+            <p>Texto sobre mim</p>
+
+            <div class="skills">
+                <h3>Habilidades</h3>
+                <div>Java</div>
+                <div>Python</div>
+                <div>JavaScript</div>
+                <div>HTML/CSS</div>
+                <div>Modelagem OO</div>
+                <div>Lógica</div>
+            </div>
+
+            <div class="experience">
+                <h3>Experiência</h3>
+                <p>Experiência na criação de projetos em menor escala, com o foco no aprendizado em desenvolver
+                    aplicações diversas com os métodos corretos.</p>
+            </div>
+        </section>
+
+        <section class="projects">
+            <h2>Meus projetos</h2>
+            <p>Dá uma olhada em alguns dos meus projetos recentes.</p>
+
+            <div class="project-grid">
+                <div class="project">
+                    <img src="projeto1.svg" alt="Projeto 1">
+                    <h3>Projeto 1</h3>
+                    <p>Descrição do Projeto 1</p>
+                </div>
+                <div class="project">
+                    <img src="projeto2.svg" alt="Projeto 2">
+                    <h3>Projeto 2</h3>
+                    <p>Descrição do Projeto 2</p>
+                </div>
+                <div class="project">
+                    <img src="projeto3.svg" alt="Projeto 3">
+                    <h3>Projeto 3</h3>
+                    <p>Descrição do Projeto 3</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>Entre em contato, não seja tímido(a)</h2>
+            <form>
+                <input type="text" placeholder="Nome">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Mensagem"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Pierry Jonny. Todos os diretos reservados.</p>
+            <nav>
+                <a href="#"><img src="githubicon.svg"></a>
+            </nav>
+        </footer>
+
+    </div>
 </body>
+
 </html>
