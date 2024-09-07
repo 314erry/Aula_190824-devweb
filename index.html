@@ -6,21 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pierry Jonny - Portfólio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
 </head>
 
 <body>
-    <header>
+    <header id="header">
+        <a href="#"><h2>Pierry Jonny</h2></a>
+        <div>
+            <a href="#about-me"><h3>Sobre Mim</h3></a>
+            <a href="#projects"><h3>Projetos</h3></a>
+            <a href="#contact"><h3>Contato</h3></a>
+        </div>
+    </header>
+
+    <section class="thumbnail">
         <div class="intro">
             <h1>Pierry Jonny</h1>
             <h2>Estudante de Programação</h2>
             <p>Sou um desenvolvedor curioso, aspirando em ser um programador Front-End no futuro.</p>
         </div>
         <div class="photo">
-            <img src="https://avatars.githubusercontent.com/u/108902774?v=4" alt="Pierry Jonny">
+            <img src="img/foto.png" alt="Pierry Jonny">
         </div>
-    </header>
+    </section>
 
-    <section class="about-me">
+    <section class="about-me" id="about-me">
         <div class="about-me-intro">
             <h2>Sobre Mim</h2>
             <p>Texto sobre mim</p>
@@ -45,14 +56,14 @@
                 </div> 
             </div>
 
-            <div>
-                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F2.bp.blogspot.com%2F-p6249VAqnmk%2FTnCMXNVxAUI%2FAAAAAAAAA5M%2FlrUWMWu2CbA%2Fs1600%2FBackground%2B9.jpg&f=1&nofb=1&ipt=74c6f245e17c2d6823f141fc0e679461d5361a6c8a23ec70ddd728df01a0d5ff&ipo=images" alt="img">
+            <div> 
+                <dotlottie-player src="https://lottie.host/960a7b02-7655-4744-9185-3e1e0530b542/2nKacHVlk8.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
             </div>
             
         </div>
     </section>
 
-    <section class="projects">
+    <section class="projects" id="projects">
         <div class="projects-intro">
             <h2>Meus projetos</h2>
             <p>Dê uma olhada em alguns dos meus projetos passados.</p>
@@ -77,7 +88,7 @@
         </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <h2>Entre em contato</h2>
         <p>Não seja tímido(a)</p>
         <form>
@@ -91,7 +102,8 @@
     <footer>
         <p>&copy; 2024 Pierry Jonny. Todos os diretos reservados.</p>
         <nav>
-            <a href="#"><img src="githubicon.svg"></a>
+            <a href="https://github.com/314erry" target="__blank"><img src="img/icons8-github-60.png" alt="github"></a>
+            <a href="https://www.instagram.com/314.erry/" target="__blank"><img src="img/icons8-instagram-60.png" alt="instagram"></a>
         </nav>
     </footer>
 

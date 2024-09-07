@@ -1,29 +1,92 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
     background-color: #f8f9fa;
-    color: #333;
+    color: #41253a;
 }
 
 header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    padding: 1px 50px;
+    top: 0;
+    z-index: 1;
+    background-color: #f8f9fa;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+header.scrolled {
+    background-color: #fc9713;
+    transition: background-color 0.3s ease;
+}
+
+header > div {
+    display: flex;
+    gap: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header div h3 {
+    position: relative;
+    padding: 5px;
+    overflow: hidden;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+header div h3::before {
+    content: '';
+    position: absolute;
+    bottom: -100%; /* Começa fora da área de baixo */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #41253a;
+    z-index: -1;
+    transition: bottom 0.3s ease; /* Transição para mover o fundo */
+}
+
+header div h3:hover::before {
+    bottom: 0; /* Preenche o fundo de baixo para cima */
+}
+
+header div h3:hover {
+    color: #f8f9fa;
+}
+
+
+.thumbnail {
+    display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #000;
-    color: white;
+    background-color: #fc9713;
     padding: 50px;
+    height: 550px;
 }
 
 .intro {
+    position: relative;
+    bottom: 50px;
     text-align: left;
     max-width: 600px;
 }
 
 .intro h1 {
-    font-size: 3rem;
+    font-size: 6rem;
     font-weight: bold;
     margin-bottom: 0;
 }
@@ -33,14 +96,11 @@ header {
     margin-bottom: 20px;
 }
 
-.intro p {
-    color: lightgray;
-}
-
 .photo img {
-    border-radius: 50%;
-    width: 300px;
-    height: 300px;
+    position: relative;
+    top: 19px;
+    width: 650px;
+    
 }
 
 .about-me {
@@ -59,11 +119,11 @@ header {
 .about-me-intro h2 {
     font-size: 2.5rem;
     font-weight: bold;
+    color: #fc9713
 }
 
 .about-me-intro p {
     font-size: 1.25rem;
-    color: #555;
 }
 
 .about-me-content {
@@ -72,6 +132,9 @@ header {
     align-items: center;
 }
 
+.skills h3 {
+    color: #fc9713;
+}
 
 .skills > div {
     display: inline-flex;
@@ -82,6 +145,10 @@ header {
     font-weight: 500;
     text-align: center;
     margin-right: 10px;
+}
+
+.experience h3 {
+    color: #fc9713;
 }
 
 .experience p {
@@ -110,11 +177,11 @@ header {
 .projects-intro h2 {
     font-size: 2.5rem;
     font-weight: bold;
+    color: #fc9713;
 }
 
 .projects-intro p {
     font-size: 1.25rem;
-    color: #555;
 }
 
 .project-grid {
@@ -144,11 +211,11 @@ header {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 10px;
+    color: #fc9713;
 }
 
 .project p {
     font-size: 1rem;
-    color: #555;
 }
 
 .contact {
@@ -163,12 +230,24 @@ header {
 .contact h2 {
     font-size: 2.5rem;
     font-weight: bold;
+    color: #fc9713;
+}
+
+.contact p {
     margin-bottom: 50px;
+    margin-top: -20px;
 }
 
 .contact form {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.contact textarea {
+    max-width: 600px;
+    min-width: 600px;
+    min-height: 50px;
 }
 
 .contact input, .contact textarea {
@@ -177,34 +256,41 @@ header {
     border-radius: 5px;
     border: 1px solid #ddd;
     font-size: 1rem;
-    width: 100%;
+    width: 100%; 
 }
 
 .contact button {
     padding: 15px;
-    background-color: #000;
+    background-color: #41253a;
     color: white;
     border: none;
     border-radius: 5px;
     font-size: 1.25rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: 100%;
 }
 
 .contact button:hover {
-    background-color: crimson;
+    background-color: #fc9713;
 }
 
 footer {
-    padding: 20px;
-    background-color: #000;
-    color: white;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    background-color: #fc9713;
+    text-align: left;
 }
 
-footer nav a img {
-    width: 30px;
-    height: 30px;
-    margin: 0 10px;
-    filter: brightness(0) invert(1);
+nav img {
+    margin-left: 10px;
+    transition: 1s;
+}
+
+nav img:hover {
+    filter: brightness(1000%);
+    margin-left: 10px;
+    transition: 1s;
 }
