@@ -12,6 +12,5 @@ This project is a personal portfolio website developed as part of the Web Develo
 The portfolio is a practical application of the concepts learned in Web Development I, demonstrating my progress as a developer and my ability to create functional, user-friendly web pages.
 
 ## Features
-- Responsive design for optimal viewing on various devices.
 - Sections include **About Me**, **Skills**, **Projects**, and **Contact**.
 - Interactive elements to enhance user experience.
