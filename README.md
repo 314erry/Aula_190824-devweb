@@ -15,9 +15,3 @@ The portfolio is a practical application of the concepts learned in Web Developm
 - Responsive design for optimal viewing on various devices.
 - Sections include **About Me**, **Skills**, **Projects**, and **Contact**.
 - Interactive elements to enhance user experience.
-
-## How to Use
-You can access the portfolio directly through the site hosted on GitHub. Open the following link in any web browser to view the site: https://314erry.github.io/ProjetoC1-devweb1/
-
-## Acknowledgements
-Special thanks to my professor Otávio Lube and classmates for their support and guidance throughout this project.
