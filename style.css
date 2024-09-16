@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+
 html {
     scroll-behavior: smooth;
 }
@@ -51,17 +52,17 @@ header div h3 {
 header div h3::before {
     content: '';
     position: absolute;
-    bottom: -100%; /* Começa fora da área de baixo */
+    bottom: -100%;
     left: 0;
     width: 100%;
     height: 100%;
     background: #41253a;
     z-index: -1;
-    transition: bottom 0.3s ease; /* Transição para mover o fundo */
+    transition: bottom 0.3s ease;
 }
 
 header div h3:hover::before {
-    bottom: 0; /* Preenche o fundo de baixo para cima */
+    bottom: 0;
 }
 
 header div h3:hover {
@@ -202,9 +203,15 @@ header div h3:hover {
 
 .project img {
     width: 100%;
-    height: auto;
+    height: 150px;
     border-radius: 10px;
     margin-bottom: 20px;
+    transition: 0.5s all;
+}
+
+.project img:hover {
+    transition: 0.5s all;
+    transform: scale(0.95);
 }
 
 .project h3 {

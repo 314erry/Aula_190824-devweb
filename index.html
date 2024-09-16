@@ -22,9 +22,8 @@
 
     <section class="thumbnail">
         <div class="intro">
-            <h1>Pierry Jonny</h1>
+            <h1 class="typing">Pierry Jonny</h1>
             <h2>Estudante de Programação</h2>
-            <p>Sou um desenvolvedor curioso, aspirando em ser um programador Front-End no futuro.</p>
         </div>
         <div class="photo">
             <img src="img/foto.png" alt="Pierry Jonny">
@@ -34,7 +33,7 @@
     <section class="about-me" id="about-me">
         <div class="about-me-intro">
             <h2>Sobre Mim</h2>
-            <p>Texto sobre mim</p>
+            <p>Sou um desenvolvedor curioso, aspirando em ser um programador Front-End no futuro. Atualmente graduando no curso Técnologo de Análise e Desenvolvimento de Sistemas, gosto de escrever código, desenhar e pizza.</p>
         </div>
     
         <div class="about-me-content">
@@ -51,7 +50,7 @@
         
                 <div class="experience">
                     <h3>Experiência</h3>
-                    <p>Criação de projetos diversos em menor escala, com o foco no aprendizado 
+                    <p>Criação de projetos criativos em menor escala, com o foco no aprendizado 
                         e no desenvolvimento de aplicações diversas com os métodos corretos.</p>
                 </div> 
             </div>
@@ -71,19 +70,19 @@
 
         <div class="project-grid">
             <div class="project">
-                <img src="projeto1.svg" alt="Projeto 1">
-                <h3>Projeto 1</h3>
-                <p>Descrição do Projeto 1</p>
+                <a href="https://314erry.github.io/Deducao-imersaodev/" target="_blank"><img src="img/deducao.jpg" alt="Projeto 1"></a>
+                <h3>Dedução</h3>
+                <p>Projeto feito em 2022 no mini curso de HTML, CSS e JS da Alura. Se trata de um jogo inspirado em Sherlock Holmes, onde você deduz um número de 0 a 10.</p>
             </div>
             <div class="project">
-                <img src="projeto2.svg" alt="Projeto 2">
-                <h3>Projeto 2</h3>
-                <p>Descrição do Projeto 2</p>
+                <a href="https://314erry.github.io/RPGFlix-imersaodev/" target="_blank"><img src="img/rpgflix.jpg" alt="Projeto 2"></a>
+                <h3>RPGFlix</h3>
+                <p>Projeto feito em 2022 no mini curso de HTML, CSS e JS da Alura. Se trata de uma exibição de séries de RPG, onde você pode adicionar seu próprio RPG, com nome, imagem e link.</p>
             </div>
             <div class="project">
-                <img src="projeto3.svg" alt="Projeto 3">
-                <h3>Projeto 3</h3>
-                <p>Descrição do Projeto 3</p>
+                <a href="https://314erry.github.io/NaoAbra/" target="_blank"><img src="img/naobra.PNG" alt="Projeto 3"></a>
+                <h3>Não Abra</h3>
+                <p>Projeto pessoal que eu comecei a desenvolver em 2022. Se trata de um ARG, onde você navega pelas pastas enigmáticas e pessoais de um usuário desconhecido na web.</p>
             </div>
         </div>
     </section>
@@ -91,10 +90,10 @@
     <section class="contact" id="contact">
         <h2>Entre em contato</h2>
         <p>Não seja tímido(a)</p>
-        <form>
-            <input type="text" placeholder="Nome">
-            <input type="email" placeholder="Email">
-            <textarea placeholder="Mensagem"></textarea>
+        <form id="contact-form" action="https://formspree.io/f/xanwzkno" method="POST">
+            <input type="text" id="name" name="name" placeholder="Nome" required>
+            <input type="email" id="email" name="_replyto" placeholder="Email" required>
+            <textarea id="message" name="message" placeholder="Mensagem" required></textarea>
             <button type="submit">Enviar</button>
         </form>
     </section>
