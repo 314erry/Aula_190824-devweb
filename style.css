@@ -283,7 +283,7 @@ header div h3:hover {
     background-color: #fc9713;
 }
 
-nome::placeholder, email:placeholder {
+::placeholder {
     font-family: "Roboto", sans-serif;
 }
 
