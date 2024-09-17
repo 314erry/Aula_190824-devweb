@@ -302,8 +302,8 @@ nav a:nth-child(2){
 footer {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 10px 50px;
+    justify-content: center;
+    padding: 0px 50px;
     background-color: #fc9713;
     text-align: left;
 }
