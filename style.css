@@ -75,7 +75,7 @@ header div h3:hover {
     align-items: center;
     background-color: #fc9713;
     padding: 50px;
-    height: 550px;
+    height: 500px;
     flex-direction: row;
 }
 
@@ -100,7 +100,7 @@ header div h3:hover {
 
 .photo img {
     position: relative;
-    top: 66px;
+    top: 41px;
     width: 100%;
     height: auto;
 
