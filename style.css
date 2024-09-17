@@ -10,6 +10,7 @@ body {
     font-family: "Roboto", sans-serif;
     background-color: #f8f9fa;
     color: #41253a;
+     width: 100%;
 }
 
 header {
@@ -89,6 +90,7 @@ header div h3:hover {
     font-size: 6vw;
     font-weight: bold;
     margin-bottom: 0;
+    white-space: nowrap
 }
 
 .intro h2 {
@@ -302,24 +304,19 @@ nav img:hover {
 
 /* Estilos para telas pequenas (mobile) */
 @media (max-width: 600px) {
-    body {
+header {
         padding: 10px;
+        text-align: center;
     }
-
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px;
-    }
-
+    
     .thumbnail {
         flex-direction: column;
         text-align: center;
         padding: 20px;
     }
-
-    .intro h1 {
-        font-size: 4rem;
+    
+    .thumbnail .intro h1 {
+        font-size: 3rem;
     }
 
     .intro h2 {
@@ -353,27 +350,5 @@ nav img:hover {
     .contact textarea {
         max-width: 100%;
         min-width: 100%;
-    }
-}
-
-/* Estilos para tablets */
-@media (min-width: 601px) and (max-width: 1024px) {
-    .thumbnail {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .photo img {
-        width: 100%;
-    }
-
-    .about-me-content {
-        flex-direction: column;
-    }
-
-    .project-grid {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
     }
 }
