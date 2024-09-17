@@ -90,7 +90,7 @@ header div h3:hover {
     font-size: 6vw;
     font-weight: bold;
     margin-bottom: 0;
-    white-space: nowrap
+    white-space: wrap;
 }
 
 .intro h2 {
@@ -99,8 +99,20 @@ header div h3:hover {
 }
 
 .photo img {
+    position: relative;
+    top: 66px;
     width: 100%;
     height: auto;
+
+}
+
+nav img:hover {
+    filter: brightness(1000%);
+}
+
+nav a:nth-child(2){
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .about-me {
@@ -296,20 +308,9 @@ footer {
     text-align: left;
 }
 
-nav img {
-    margin-left: 10px;
-    transition: 1s;
-}
-
-nav img:hover {
-    filter: brightness(1000%);
-    margin-left: 10px;
-    transition: 1s;
-}
-
 /* Estilos para telas pequenas (mobile) */
-@media (max-width: 600px) {
-header {
+@media (max-width: 1000px) {
+    header {
         padding: 10px;
         text-align: center;
     }
@@ -318,10 +319,19 @@ header {
         flex-direction: column;
         text-align: center;
         padding: 20px;
+        height: 300px;
     }
     
     .thumbnail .intro h1 {
         font-size: 3rem;
+    }
+
+    .photo {
+        display: none;
+    }
+
+    .intro {
+        text-align: center;
     }
 
     .intro h2 {
