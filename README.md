@@ -14,3 +14,8 @@ The portfolio is a practical application of the concepts learned in Web Developm
 ## Features
 - Sections include **About Me**, **Skills**, **Projects**, and **Contact**.
 - Interactive elements to enhance user experience.
+
+## How to Use
+1. Visit my GitHub page at [Personal Portfolio](https://314erry.github.io/ProjetoC1-devweb1/).
+2. Explore the different sections: **About Me**, **Skills**, **Projects**, and **Contact**.
+3. Interact with the projects and explore the content to get an overview of my work.
