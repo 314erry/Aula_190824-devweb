@@ -283,7 +283,7 @@ header div h3:hover {
     background-color: #fc9713;
 }
 
-::placeholder {
+::placeholder, textarea {
     font-family: "Roboto", sans-serif;
 }
 
